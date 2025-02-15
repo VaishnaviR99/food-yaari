@@ -5,8 +5,11 @@
   "dependencies": {
     "@apideck/better-ajv-errors": "^0.3.6",
     "draft-js": "^0.11.7",
+    "eslint": "^9.20.1",
+    "file-loader": "^6.2.0",
     "firebase": "^11.2.0",
     "react": "^19.0.0",
+    "react-dev-utils": "^12.0.1",
     "react-dom": "^19.0.0",
     "react-draft-wysiwyg": "^1.15.0",
     "react-icons": "^5.4.0",
@@ -41,6 +44,6 @@
     ]
   },
   "devDependencies": {
-    "ajv": "^7.2.4"
+    "ajv": "^6.12.6"
   }
 }
