@@ -1,0 +1,197 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1EB585;
+    --secondar-color: #1C3C2F;
+  }
+#navContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+   font-family: "Poppins", serif; 
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+   position: fixed; 
+   top: 0;
+   z-index: 10;
+   background-color: white;
+  
+}
+#navContainer img{
+height: 100%;
+width:6%;
+
+}
+#navLinks{
+    display: flex;
+   width: 100%;
+    justify-content: flex-end;
+    gap: 6%;
+    align-items: center;
+    margin-right: 5%;
+   
+   
+}
+
+#navLinks a {
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight:500;
+    color: #4f5052;
+    margin: .5rem;
+    transition: all 0.3s ease;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+  }
+  
+  #navLinks a:hover {
+   color: #277e5b;
+   background-color: rgb(244, 253, 246);
+  }
+  #login {
+    border: none;
+    color: white;
+    background-color: var(--primary-color);
+    padding: .5rem 2rem;
+    font-size: 18px;
+    font-weight:bold;
+    cursor: pointer;
+    border-radius: .5rem;
+    transition: all 0.3s ease;
+  }
+  
+  #myAccount{
+   
+    font-size: 3.5rem;
+    color: #4f5052;
+    margin-left: -3rem;
+    margin-right: 1rem;
+    padding: .8rem;
+  }
+  #myAccount:hover{
+    color: #277e5b;
+   background-color: rgb(244, 253, 246);
+   border-radius: 1rem;
+  }
+
+  #login:hover{
+    background-color: #277e5b;
+  }
+
+/* login/signup */
+  #signupContainer,
+  #loginContainer{
+    background: linear-gradient( #ffffff, var(--primary-color) 150%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .authSection{
+    width: 30%;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .authSection h2{
+    color: rgb(59, 54, 54);
+    margin-bottom: .6rem;
+  }
+  .inputField{
+    margin: .5rem;
+    padding: .3rem;
+    border-radius: .5rem;
+    border: 1px solid #d8f7ef;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #d8f7ef;
+  }
+  .inputField:focus{
+    border: 1px solid var(--primary-color);
+    outline: none;
+    box-shadow: var(--primary-color) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+  .inputField::placeholder {
+    color: #bdb5b5; 
+    opacity: 1; 
+  }
+
+ .authSection form{
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .authSection p{
+    color: #36363d;
+    margin-bottom: 1rem;
+  }
+  #signup,
+  #login{
+    margin: 1rem 0;
+    padding:.5rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius:.5rem;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #signup:hover,
+  #login:hover{
+    background-color: #388f6c;
+  }
+  .redirectLink {
+    text-decoration: none; 
+    color: var(--primary-color); 
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 1.1rem;
+  }
+  
+  .redirectLink:hover {
+    color: #308064; 
+  }
+  .googleAuth{
+   border: 1px solid rgb(156, 153, 153);
+   padding: .5rem;
+   border-radius: .5rem;
+   background-color: transparent;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction:row;
+   gap: .3rem;
+  color: gray;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s, transform 0.3s;
+  }
+
+  
+ 
+  .googleIcon {
+    font-size: 1.5rem;
+  }
+
+  .googleAuth:hover  {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  }
